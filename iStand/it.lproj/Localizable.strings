@@ -1,0 +1,58 @@
+/* 
+ Localizable.strings
+ iStand
+ 
+ Created by Maurizio Pinzi on 31/07/12.
+ Copyright (c) 2012 Almawave. All rights reserved.
+ */
+"CREATEEVENT" = "Creare un evento";
+"REGISTRATEDPAR" = "Partecipanti registrati";
+"BACK" = "Indietro";
+"Cancel" = "Annulla";
+"ID" = "codice";
+"NAME" = "nome";
+"SURNAME" = "cognome";
+"ADDRESS" = "indirizzo";
+"CITY" = "città";
+"COUNTRY" = "paese";
+"ZIP" = "cap";
+"EMAIL" = "email";
+"MOBILE" = "cellulare";
+"TELEPHONE" = "telefono";
+"DEPARTMENT" = "dipartimento";
+"POSITION" = "posizione";
+"INSTITUTE" = "instituto";
+"ADDEMAIL" = "email_add";
+"ADDMOBILE" = "cellulare_add";
+"ADDTELEPHONE" = "telefono_add";
+"CSVCREATED" = "CSV creato";
+"EVENTSTATISTICS" = "Statistiche Evento";
+"YES" = "Si";
+"NO" = "No";
+"NOCHOICE" = "No scelta";
+"SETTINGS" = "Configurazioni";
+"DELETE" = "Delete";
+"DELETEMSG" = "Vuoi cancellare l'evento?\nCancellando l'evento verranno cancellate anche tutte le informazioni associate ad esso.";
+"CANCEL" = "Annulla";
+"OK" = "Ok";
+"NOEVENTTODELETE" = "Non sono presenti eventi da cancellare";
+"LOADING" = "Loading";
+"TESTNOWS" = "SOAP non funzionante";
+"TESTYESWS" = "SOAP funzionante";
+"SEARCH" = "Ricerca";
+"SEARCHRESULT" = "Risultati ricerca";
+"PARTOUPDATE" = "Partecipanti da aggiornare";
+"PARUPDATED" = "Partecipanti aggiornati";
+"STARTDATE" = "Data Dal";
+"ENDDATE" = "Data Al";
+"EVENTCREATION" = "Creazione Evento";
+"ALERTFLAG" = "Inserire nome campo flag";
+"ALERTNOTE" = "Inserire nome campo nota";
+"ALERTMULTIPLE" = "Inserire nome campo multiplo e/o almeno 2 campi";
+"SELECT" = "Seleziona...";
+"ALERTEVENTTITLE" = "Inserire il titolo dell'evento";
+"ERRORSAVEEVENT" = "Errore salvataggio evento";
+"ERRORSAVE" = "Impossibile salvare le modifiche";
+"SAVED" = "Salvato";
+"TESTING" = "Verifico...";
+

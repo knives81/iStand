@@ -1,0 +1,57 @@
+/* 
+ Localizable.strings
+ iStand
+ 
+ Created by Maurizio Pinzi on 31/07/12.
+ Copyright (c) 2012 Almawave. All rights reserved.
+ */
+"CREATEEVENT" = "Create an event";
+"REGISTRATEDPAR" = "Registered participants";
+"BACK" = "Back";
+"Cancel" = "Cancel";
+"ID" = "id";
+"NAME" = "name";
+"SURNAME" = "surname";
+"ADDRESS" = "address";
+"CITY" = "city";
+"COUNTRY" = "country";
+"ZIP" = "zip";
+"EMAIL" = "email";
+"MOBILE" = "mobile";
+"TELEPHONE" = "telephone";
+"DEPARTMENT" = "department";
+"POSITION" = "position";
+"INSTITUTE" = "institute";
+"ADDEMAIL" = "add_email";
+"ADDMOBILE" = "add_mobile";
+"ADDTELEPHONE" = "add_telephone";
+"CSVCREATED" = "CSV created";
+"EVENTSTATISTICS" = "Event Statistics";
+"YES" = "Yes";
+"NO" = "No";
+"NOCHOICE" = "No choice";
+"SETTINGS" = "Settings";
+"DELETE" = "Delete";
+"DELETEMSG" = "Do you want to delete the event?\nDeleting the event, you will delete all information related to it.";
+"CANCEL" = "Cancel";
+"OK" = "Ok";
+"NOEVENTTODELETE" = "No events to delete";
+"LOADING" = "Loading";
+"TESTNOWS" = "SOAP not working";
+"TESTYESWS" = "SOAP working";
+"SEARCH" = "Search";
+"SEARCHRESULT" = "Search result";
+"PARTOUPDATE" = "Participants to update";
+"PARUPDATED" = "Participants updated";
+"STARTDATE" = "Start date";
+"ENDDATE" = "End date";
+"EVENTCREATION" = "Event Creation";
+"ALERTFLAG" = "Add name to flag field";
+"ALERTNOTE" = "Add name to note field";
+"ALERTMULTIPLE" = "Add name to multiple field and/or 2 option field at least";
+"SELECT" = "Select...";
+"ALERTEVENTTITLE" = "Add event title";
+"ERRORSAVEEVENT" = "Error event saving";
+"SAVED" = "Saved";
+"TESTING" = "Testing...";
+

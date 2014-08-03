@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CampoDinamico" representedClassName="CampoDinamico" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ordinamento" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="campod_evento" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Evento" inverseName="evento_campod_inv" inverseEntity="Evento" syncable="YES"/>
+        <relationship name="campod_opzione_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Opzione" inverseName="opzione_campod" inverseEntity="Opzione" syncable="YES"/>
+        <relationship name="campod_scelta_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scelta" inverseName="scelta_campod" inverseEntity="Scelta" syncable="YES"/>
+    </entity>
+    <entity name="Evento" representedClassName="Evento" syncable="YES">
+        <attribute name="data_al" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="data_creazione" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="data_dal" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="organizzazione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titolo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="evento_campod_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CampoDinamico" inverseName="campod_evento" inverseEntity="CampoDinamico" syncable="YES"/>
+        <relationship name="evento_partec_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Partecipante" inverseName="partec_evento" inverseEntity="Partecipante" syncable="YES"/>
+        <relationship name="evento_regist_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Registrazione" inverseName="regist_evento" inverseEntity="Registrazione" syncable="YES"/>
+    </entity>
+    <entity name="Opzione" representedClassName="Opzione" syncable="YES">
+        <attribute name="ordinamento" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="valore" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="opzione_campod" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CampoDinamico" inverseName="campod_opzione_inv" inverseEntity="CampoDinamico" syncable="YES"/>
+        <relationship name="opzione_scelta_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scelta" inverseName="scelta_opzione" inverseEntity="Scelta" syncable="YES"/>
+    </entity>
+    <entity name="Partecipante" representedClassName="Partecipante" syncable="YES">
+        <attribute name="cap" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cap_ist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cellulare" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cellulare_add" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="citta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="citta_ist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="codice" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="cognome" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="da_aggiornare" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="dipartimento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email_add" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax_add" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="indirizzo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="indirizzo_ist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="istituto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paese" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paese_ist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="posizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="presente" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="provincia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="provincia_ist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specialita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono_add" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="partec_evento" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Evento" inverseName="evento_partec_inv" inverseEntity="Evento" syncable="YES"/>
+        <relationship name="partec_regist_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Registrazione" inverseName="regist_partec" inverseEntity="Registrazione" syncable="YES"/>
+        <relationship name="partec_scelta_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scelta" inverseName="scelta_partec" inverseEntity="Scelta" syncable="YES"/>
+    </entity>
+    <entity name="Registrazione" representedClassName="Registrazione" syncable="YES">
+        <attribute name="data_entrata" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="regist_evento" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Evento" inverseName="evento_regist_inv" inverseEntity="Evento" syncable="YES"/>
+        <relationship name="regist_partec" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Partecipante" inverseName="partec_regist_inv" inverseEntity="Partecipante" syncable="YES"/>
+    </entity>
+    <entity name="Scelta" representedClassName="Scelta" syncable="YES">
+        <attribute name="ordinamento" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="posizione_multiple" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="valore_flag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valore_multiple" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valore_nota" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scelta_campod" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CampoDinamico" inverseName="campod_scelta_inv" inverseEntity="CampoDinamico" syncable="YES"/>
+        <relationship name="scelta_opzione" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Opzione" inverseName="opzione_scelta_inv" inverseEntity="Opzione" syncable="YES"/>
+        <relationship name="scelta_partec" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partecipante" inverseName="partec_scelta_inv" inverseEntity="Partecipante" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CampoDinamico" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Evento" positionX="-225" positionY="195" width="128" height="120"/>
+        <element name="Opzione" positionX="9" positionY="81" width="128" height="105"/>
+        <element name="Partecipante" positionX="-450" positionY="117" width="128" height="525"/>
+        <element name="Registrazione" positionX="304" positionY="117" width="128" height="90"/>
+        <element name="Scelta" positionX="511" positionY="153" width="128" height="120"/>
+    </elements>
+</model>
