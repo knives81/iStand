@@ -26,5 +26,5 @@ int const HEIGHT_BARCHART = 50;
 int const WIDTH_BARCHART = 400;
 int const HEIGHT_CAMPO = 30;
 int const GAP_LBL_BAR = 10;
-int const ISDEBUG = 1;
+int const ISDEBUG = 0;
 

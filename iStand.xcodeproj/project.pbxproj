@@ -685,6 +685,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Almawave;
+				TargetAttributes = {
+					2244166114F2D49E00BDD0EA = {
+						DevelopmentTeam = D6A877574A;
+					};
+				};
 			};
 			buildConfigurationList = 2244165C14F2D49D00BDD0EA /* Build configuration list for PBXProject "iStand" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -921,10 +926,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6A877574A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iStand/iStand-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
 				INFOPLIST_FILE = "iStand/iStand-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_NAME = istand;
 				PROVISIONING_PROFILE = "";
@@ -937,10 +945,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6A877574A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iStand/iStand-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
 				INFOPLIST_FILE = "iStand/iStand-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_NAME = istand;
 				PROVISIONING_PROFILE = "";

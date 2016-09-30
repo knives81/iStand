@@ -384,6 +384,7 @@
         UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:item];
         segmentedControl.frame = CGRectMake(offsetX+widthContr+gapX,offsetY+(heightContr/2)-(heightSegm/2),widthContr,heightSegm);
         segmentedControl.tag = [campoDinamico.ordinamento intValue];
+        segmentedControl.tintColor = [UIColor blackColor];
         
 		if ([scelta.valore_flag isEqualToString:@"true"]) 
 		{
